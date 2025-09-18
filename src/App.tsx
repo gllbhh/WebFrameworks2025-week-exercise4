@@ -15,12 +15,13 @@ const App = () => {
 			</nav>
 
 			{/* Add react router routes here. See Router documentation how to define dynamic route segments:
-          https://reactrouter.com/start/declarative/routing#dynamic-segments
+          https://reactrouter.com/start/declarative/routing#dynamic-segment
 
           The idea is to have access to the product details with routes such as /products/1, /products/2, etc.where
           the last segment is the product id. 
           The id can then be used to fetch the product details in the ProductDetailsView component.
       */}
+      
 			<Routes>
 				<Route path="/" element={<ProductsView />} />
 				<Route path="/products" element={<ProductsView />} />

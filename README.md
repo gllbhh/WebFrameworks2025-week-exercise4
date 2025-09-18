@@ -1,4 +1,4 @@
-# Web Development Frameworks 2024 - Week Exercise 4
+# Web Development Frameworks 2025 - Week Exercise 4
 
 The goal of this exercise is to practice React Router.
 
@@ -22,7 +22,7 @@ Here is how the application should look like when finished.
 
 In the application there are four react components:
 
-- `App` is the root component that renders the navigation bar AND SHOULD IMPLEMENT THE ROUTING with Routes and Route components, but must not use BrowserRouter or any other router. The router will be initialized by the tests. 
+- `App` is the root component that renders the navigation bar AND SHOULD IMPLEMENT THE ROUTING by using React Router v7 data mode ([text](https://reactrouter.com/start/data/routing))
 - `ProductsView` It renders the list of products. Each product is rendered using the `Product` component. It is the view that should be rendered when the user navigates to the root path `/`.
 - `Product` is the component that renders a single product is used by `ProductsView`. It renders the product name and should render a router link to the single product view. It is used by the `ProductsView` component.
 - `ProductDetailsView` is the component that renders a single product view. It renders the product details and should render a router link to the list of products. It is the view that should be rendered when the user navigates to the `/products/:id` path.
@@ -69,7 +69,7 @@ Paths to implement:
 - `/products/:id` should render the `ProductDetailsView` component.
 - `/cart` should render the `CartView` component.
 
-Notice that the path to the single product view contains a dynamic segment `:id` that is used to identify the product. The `ProductDetailsView` component uses the `getProductById(id)` function to get the product data. You can read more about dynamic segments in the [React Router documentation](https://reactrouter.com/en/main/route/route#dynamic-segments). Notice especially the meaining of `:` caracter in the path and how to access the dynamic segment id value in the component with the useParams hook.
+Notice that the path to the single product view contains a dynamic segment `:id` that is used to identify the product. The `ProductDetailsView` component uses the `getProductById(id)` function to get the product data. You can read more about dynamic segments in the [React Router documentation](https://reactrouter.com/start/data/routing#dynamic-segments). Notice especially the meaining of `:` caracter in the path and how to access the dynamic segment id value in the component with the useParams hook.
 
 ## Task 2: Add a link to the single product view
 
