@@ -1,6 +1,6 @@
 import React from "react";
 import { getProductById } from "../products";
-import { useParams, NavLink, Link } from "react-router";
+import { useParams, NavLink } from "react-router";
 //import { NavLink, Link } from "react-router";
 
 const ProductDetailsView = () => {
@@ -33,7 +33,6 @@ const ProductDetailsView = () => {
 					<div style={{ marginTop: "20px" }}>
 						{/* Replace anchor element with router Link */}
 						<NavLink to="/">Back to Products</NavLink>
-						{/* <Link to="/">Back to Products</Link> */}
 						{/* <a href="/">Back to Products</a> */}
 					</div>
 				</div>
